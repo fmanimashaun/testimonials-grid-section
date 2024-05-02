@@ -1,0 +1,128 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./colors";
+
+.group-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 25px;
+  justify-items: center;
+  padding-block: clamp(0rem, 5.9155rem + -6.5728vi, 4.375rem);
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(4, minmax(0, 325px));
+    grid-template-rows: repeat(2, auto);
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  .card {
+    width: 100%;
+    padding: 32px;
+    max-width: 325px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: colors.$white;
+
+    @media screen and (min-width: 1024px) {
+      max-width: none;
+    }
+
+    &__author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.875rem;
+      letter-spacing: -0.03rem;
+      font-weight: 600;
+      color: colors.$white;
+
+      &-status {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: colors.$lightGray;
+      }
+
+      &-img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    &__summary {
+      font-size: 1.25rem;
+      font-weight: semibold;
+      line-height: 1.5;
+      color: colors.$white;
+      margin-block: 1rem;
+    }
+
+    &__subtext {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: colors.$lightGray;
+      letter-spacing: -0.01rem;
+    }
+
+    &:nth-child(1) {
+      background-color: colors.$moderateViolet;
+      background-image: url("../img/bg-pattern-quotation.svg");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 30px) 0;
+      @media screen and (min-width: 1024px) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: colors.$GrayishBlue;
+      @media screen and (min-width: 1024px) {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: colors.$white;
+      @media screen and (min-width: 1024px) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      .card__author {
+        color: colors.$GrayishBlue;
+      }
+      .card__summary {
+        color: colors.$GrayishBlue;
+      }
+    }
+
+    &:nth-child(4) {
+      background-color: colors.$Blackishblue;
+      @media screen and (min-width: 1024px) {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+      }
+    }
+
+    &:nth-child(5) {
+      background-color: colors.$white;
+      @media screen and (min-width: 1024px) {
+        grid-column: 4 / span 1;
+        grid-row: 1 / -1;
+      }
+
+      .card__author {
+        color: colors.$GrayishBlue;
+      }
+      .card__summary {
+        color: colors.$GrayishBlue;
+      }
+    }
+  }
+}

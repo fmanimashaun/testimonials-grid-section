@@ -1,0 +1,17 @@
+/* import fonts */
+
+/* Barlow Semi Condensed */
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("../fonts/BarlowSemiCondensed-Medium.ttf") format("TrueType");
+  font-weight: 500;
+}
+
+/* Barlow Semi Condensed */
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("../fonts/BarlowSemiCondensed-SemiBold.ttf") format("TrueType");
+  font-weight: 600;
+}
+
+$primary-ff: "Barlow Semi Condensed", sans-serif;
