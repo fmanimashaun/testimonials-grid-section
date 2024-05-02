@@ -10,6 +10,13 @@
   justify-items: center;
   padding-block: clamp(0rem, 5.9155rem + -6.5728vi, 4.375rem);
 
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 325px));
+    grid-template-rows: repeat(3, auto);
+    width: fit-content;
+    margin-inline: auto;
+  }
+
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(4, minmax(0, 325px));
     grid-template-rows: repeat(2, auto);
@@ -73,6 +80,12 @@
       background-image: url("../img/bg-pattern-quotation.svg");
       background-repeat: no-repeat;
       background-position: calc(100% - 30px) 0;
+
+      @media screen and (min-width: 768px) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+      }
+
       @media screen and (min-width: 1024px) {
         grid-column: 1 / span 2;
         grid-row: 1 / span 1;
