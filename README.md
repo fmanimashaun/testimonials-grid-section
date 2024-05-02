@@ -34,6 +34,10 @@ Your users should be able to:
 
 ![Desktop view](screenshots/desktop.png)
 
+#### Tablet view
+
+![Tablet view](screenshots/tablet.png)
+
 #### Mobile view
 
 ![Mobile view](screenshots/mobile.png)
