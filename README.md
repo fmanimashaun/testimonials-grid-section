@@ -44,8 +44,8 @@ Your users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/fmanimashaun/four-card-feature-section)
-- [Live Site URL](https://fmanimashaun.github.io/four-card-feature-section/)
+- [Solution URL](https://github.com/fmanimashaun/testimonials-grid-section)
+- [Live Site URL](https://fmanimashaun.github.io/testimonials-grid-section/)
 
 ## My process
 
