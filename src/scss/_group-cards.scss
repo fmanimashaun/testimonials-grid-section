@@ -9,6 +9,8 @@
   gap: 25px;
   justify-items: center;
   padding-block: clamp(0rem, 5.9155rem + -6.5728vi, 4.375rem);
+  max-width: 1110px;
+  margin-inline: auto;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 325px));
